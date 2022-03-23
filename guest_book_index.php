@@ -32,7 +32,6 @@ if(array_key_exists('guest_book_data', $_COOKIE)){
     <tr>
       <th scope="col">ID</th>
       <th scope="col">Name</th>
-      <th scope="col">Comment</th>
       <th scope="col">Action</th>
     </tr>
   </thead>
@@ -43,8 +42,7 @@ if(array_key_exists('guest_book_data', $_COOKIE)){
     <tr>
     <td><?= $key;?></td>
       <td><?= $data['full_name'];?></td>
-      <td><?= $data['comment'];?></td>
-      <td>View | Edit | Delete </td>
+      <td> <a href="guest_book_show.php">View</a> | Edit | Delete </td>
     </tr>
     
     <?php
