@@ -19,6 +19,10 @@
       <div class="row justify-content-center mt-4">
         <div class="col-6">
           <h3 class="text-center">Add hare:</h3>
+
+          <div>
+            <button type="button" class="btn btn-secondary btn-sm"><a href="guest_book_index.php" class="text-white text-decoration-none">Index</a></button>
+          </div>
           <form method="POST" action="guest_book_processor.php" enctype="multipart/form-data" class="mt-3">
             <div class="mb-3 row">
               <label for="inpufull_Name" class="col-md-2 col-form-label">Full Name:</label>

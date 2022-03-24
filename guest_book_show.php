@@ -1,5 +1,13 @@
 <?php
 
+$guest_position=$_GET['guest_position'];
+$guests=[];
+if(array_key_exists('guest_book_data', $_COOKIE)){
+  $guests = unserialize($_COOKIE['guest_book_data']);
+}
+
+$guest = $guests[$guest_position];
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -21,13 +29,19 @@
           <h3 class="text-center">Show:</h3>
           <dl class="row">
                       <dt class="col-md-4">Full Name:</dt>
-                      <dd class="col-md-8">name</dd>
+                      <dd class="col-md-8"><?= $guest['full_name'];?></dd>
                     </dl>
 
                     <dl class="row">
                       <dt class="col-md-4">Comment:</dt>
-                      <dd class="col-md-8">Comment</dd>
+                      <dd class="col-md-8"><?= $guest['comment'];?></dd>
                     </dl>
+
+                    <div>
+            <button type="button" class="btn btn-secondary btn-sm"><a href="guest_book_index.php" class="text-white text-decoration-none">Index</a></button>
+          </div>
+
+
           <div>
           </div>
         </div>

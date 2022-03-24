@@ -42,7 +42,7 @@ if(array_key_exists('guest_book_data', $_COOKIE)){
     <tr>
     <td><?= $key;?></td>
       <td><?= $data['full_name'];?></td>
-      <td> <a href="guest_book_show.php">View</a> | Edit | Delete </td>
+      <td> <a href="guest_book_show.php?guest_position=<?= $key;?>">Show</a> | Edit | Delete </td>
     </tr>
     
     <?php
