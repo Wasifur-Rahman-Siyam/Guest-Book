@@ -46,7 +46,7 @@ if(array_key_exists('guest_book_data', $_COOKIE)){
       | 
       <a class="btn btn-secondary" href="guest_book_edit.php?guest_position=<?= $key;?>">Edit </a>
       | 
-      <a class="btn btn-danger" href="#">Delete </a>  
+      <a class="btn btn-danger" href="guest_book_delete.php?guest_position=<?= $key;?>">Delete </a>  
     </td>
     </tr>
     
